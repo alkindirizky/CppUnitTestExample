@@ -2,12 +2,12 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="CircularBuffer" />
+		<Option title="MotorDriver" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/CircularBuffer" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/MotorDriver" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -15,15 +15,17 @@
 					<Add option="-std=c++11" />
 					<Add option="-g" />
 					<Add directory="../catch2" />
-					<Add directory="../CircularBuffer" />
+					<Add directory="../fakeit" />
+					<Add directory="../MotorDriver" />
 				</Compiler>
 				<Linker>
 					<Add directory="../catch2" />
-					<Add directory="../CircularBuffer" />
+					<Add directory="../fakeit" />
+					<Add directory="../MotorDriver" />
 				</Linker>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/CircularBuffer" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/MotorDriver" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -39,11 +41,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="CircularBuffer.cpp" />
-		<Unit filename="CircularBuffer.hpp">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
-		<Unit filename="CircularBufferTest.cpp" />
+		<Unit filename="MotorDriver.cpp" />
+		<Unit filename="MotorDriver.hpp" />
+		<Unit filename="MotorDriverTest.cpp" />
+		<Unit filename="PeripheralInterface.hpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
