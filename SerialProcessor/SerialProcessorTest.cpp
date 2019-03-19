@@ -24,14 +24,11 @@ TEST_CASE("Float")
         REQUIRE(floatdata == Approx(15.5));
     }
 
-    SECTION("Value 2")
-    {
+    /*
+        Another data
         data[0] = 0xfa;
         data[1] = 0x3e;
         data[2] = 0xc8;
         data[3] = 0xc2;
-        floatdata = byteFloat(data);
-
-        REQUIRE(floatdata == Approx(-100.123));
-    }
+    */
 }
