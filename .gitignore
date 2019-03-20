@@ -2,3 +2,9 @@
 *.exe
 
 *.o
+
+CircularBuffer/binary
+
+MotorDriver/binary
+
+SerialProcessor/binary
